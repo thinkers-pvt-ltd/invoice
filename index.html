@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THINKERS PVT LTD|INVOICE 2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top_rw">
+                <td colspan="2">
+                    <h2 style="margin-bottom: 0px;"> Tax invoice/Bill of Supply/Cash memo </h2>
+                    <span style=""> Bill ID : {uuid_bill} Date: DD-MM-YYYY </span>
+                </td>
+                <td style="width:30%; margin-right: 10px;">
+                    Order Id: {uuid_order}
+                </td>
+            </tr>
+            <tr class="top">
+                <td colspan="3">
+                    <table>
+                        <tr>
+                            <td>
+                                <b> Sold By: </b>
+                                <br> address_part_1
+                                <br> address_part_2
+                                <br> address_part_3
+                                <br> address_part_4
+                                <br> pincode
+                                PAN: PAN <br>
+                                GSTIN: GSTIN <br>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="information">
+                <td colspan="3">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <b> Client Address: {client_address}</b> <br>
+                                address_part_1 <br>
+                                address_part_2<br>
+                                 address_part_3<br>
+                                address_part_4
+                            </td>
+                            <td> <b> Billing Address: {client_billing_address} </b><br>
+                                 address_part_1<br>
+                                address_part_2<br>
+                                address_part_3
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <td colspan="3">
+                <table cellspacing="0px" cellpadding="2px">
+                    <tr class="heading">
+                        <td style="width:25%;">
+                            ITEM
+                        </td>
+                        <td style="width:10%; text-align:center;">
+                            QTY.
+                        </td>
+                        <td style="width:10%; text-align:right;">
+                            PRICE (INR)
+                        </td>
+                        <td style="width:15%; text-align:right;">
+                            TAX RATE & TYPE
+                        </td>
+                        <td style="width:15%; text-align:right;">
+                            TAX AMOUNT (INR)
+                        </td>
+                        <td style="width:15%; text-align:right;">
+                            TOTAL AMOUNT (INR)
+                        </td>
+                    </tr>
+                    <tr class="item">
+                        <td style="width:25%;">
+                            PRoduct:{product_name}
+                            HSN Code :{hsn_code}
+                            product_code:{p_code}
+                        </td>
+                        <td style="width:10%; text-align:center;">
+                            1
+                        </td>
+                        <td style="width:10%; text-align:right;">
+                            500
+                        </td>
+                        <td style="width:15%; text-align:right;">
+                            18% IGST
+                        </td>
+                        <td style="width:15%; text-align:right;">
+                            90
+                        </td>
+                        <td style="width:15%; text-align:right;">
+                            590
+                        </td>
+                    </tr>
+                    <tr class="item">
+                        <td style="width:25%;"> <b> Grand Total </b> </td>
+                        <td style="width:10%; text-align:center;">
+                            1
+                        </td>
+                        <td style="width:10%; text-align:right;">
+                            500
+                        </td>
+                        <td style="width:15%; text-align:right;">
+                        </td>
+                        <td style="width:15%; text-align:right;">
+                            90
+                        </td>
+                        <td style="width:15%; text-align:right;">
+                            590
+                        </td>
+                    </tr>
+            </td>
+        </table>
+        <tr class="total">
+            <td colspan="3" align="right"> Total Amount in Words : <b> Five Hundred and Ninty Rupees Only </b> </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <table cellspacing="0px" cellpadding="2px">
+                    <tr>
+                        <td width="50%">
+                            <b> Declaration: </b> <br>
+                            We declare that this invoice shows the actual price of the goods
+                            described above and that all particulars are true and correct. The
+                            goods sold are intended for end user consumption and not for resale.
+                        </td>
+                        <td>
+                            * This is a computer generated invoice and does not
+                            require a physical signature
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%">
+                        </td>
+                        <td>
+                            <b> Authorized Signature </b>
+                            <br>
+                            <br>
+                            ...................................
+                            <br>
+                            <br>
+                            <br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <!-- partial -->
+</body>
+
+</html>
